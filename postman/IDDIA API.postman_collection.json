@@ -1,0 +1,72 @@
+{
+  "info": {
+    "_postman_id": "677b6a0c-5b2c-498d-8f7b-a9698ef5cd2a",
+    "name": "IDDIA API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28063742"
+  },
+  "item": [
+    {
+      "name": "Create complaint",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"complaintTypeId\": 1,\n    \"customerBankAccountNumber\": \"1234567890\",\n    \"customerName\": \"Nom du client\",\n    \"customerPhoneNumber\": \"2250555607018\",\n    \"customerEmail\": \"email@example.com\",\n    \"description\": \"Description de la réclamation\",\n    \"dynamicInfo\": \"{\\\"name\\\": \\\"my name\\\"}\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/v1/complaints",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "complaints"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get complaint types",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "dc408be00542eed70f4e7d1336d9a38735e5fa74",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/complaint-types",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "v1", "complaint-types"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
