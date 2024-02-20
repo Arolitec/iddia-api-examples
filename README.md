@@ -1,6 +1,6 @@
 ### Postman
 
-[Schema](https://github.com/Arolitec/iddia-api-examples/blob/main/postman/LeTexto%20Client%20API.postman_collection.json)
+[Schema](https://github.com/Arolitec/iddia-api-examples/blob/main/postman//IDDIA%20API.postman_collection.json)
 
 ### Get complaint types
 
